@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import AnnouncementBanner from './components/AnnouncementBanner';
 import Navbar from './components/Navbar';
 import Homevideo from './components/Homevideo';
 import Homecontent from './components/Homecontent';
 import SlidingCards from './components/SlidingCards';
 import Contact from './components/Contact';
-import BottomBar from './components/BottomBar';
+import Footer from './components/Footer';
 import OnlinePresence from './components/OnlinePresence';
 import FeaturesGrid from './components/FeaturesGrid';
 import Teammember from './components/Teammember';
@@ -14,10 +14,19 @@ import About from './components/About';
 import Agency from './components/Agency';
 
 function App() {
+  const contactRef = useRef(null);
+
+  // Function to scroll to the contact section
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
-        {/* AnnouncementBanner */}
-        <section id='banner'>
+      {/* AnnouncementBanner */}
+      <section id='banner'>
         <AnnouncementBanner />
       </section>
 
@@ -38,7 +47,7 @@ function App() {
 
       {/* Online Presence Section */}
       <section id='onlinepresence'>
-        <OnlinePresence />
+        <OnlinePresence onScrollToContact={scrollToContact} /> {/* Pass the function as a prop */}
       </section>
 
       {/* Features Grid Section */}
@@ -72,13 +81,13 @@ function App() {
       </section> */}
 
       {/* Contact Section */}
-      <section id='contact'>
+      <section id='contact' ref={contactRef}>
         <Contact />
       </section>
 
       {/* Footer Section */}
       <section id='footer'>
-        <BottomBar />
+        <Footer />
       </section>
     </div>
   );
