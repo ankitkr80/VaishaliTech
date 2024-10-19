@@ -9,8 +9,7 @@ function Navbar() {
   };
 
   return (
-    <div className='top-10 p-[20px] font-semibold text-black w-full font-poppins text-lg flex h-20 items-center justify-between fixed z-40 shadow-md bg-gradient-to-b from-white to-gray-200'
->
+    <div className='top-10 p-[20px] font-semibold text-black w-full font-poppins text-lg flex h-20 items-center justify-between fixed z-40 shadow-md bg-gradient-to-b from-white to-gray-200'>
       <img src="VAISHALI TECH.png" alt="Logo" className='w-[200px] h-[50px] ml-[20px] sm:w-[150px] sm:h-[40px]' />
       
       {/* Hamburger Icon for mobile screens */}
@@ -21,7 +20,7 @@ function Navbar() {
       {/* Navbar menu for larger screens */}
       <div className='hidden md:flex gap-10 ml-[60px]'>
         <a
-          href="#Homecontent"
+          href="#Homecontent" // Ensure this id matches with your section id
           className="menuitem bg-transparent text-black p-2 hover:text-[#4e6185] hover:font-bold duration-300"
           onClick={(e) => {
             e.preventDefault();
@@ -32,18 +31,18 @@ function Navbar() {
         </a>
 
         <a
-          href="#SlidingCards"
+          href="#uiux" // Ensure correct id for the section
           className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
-            document.getElementById('SlidingCards')?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('uiux')?.scrollIntoView({ behavior: 'smooth' });
           }}
         >
           UI/UX
         </a>
 
         <a
-          href="#FeaturesGrid"
+          href="#FeaturesGrid" 
           className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
@@ -54,7 +53,7 @@ function Navbar() {
         </a>
 
         <a
-          href="#About"
+          href="#about"
           className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
@@ -91,11 +90,11 @@ function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-white shadow-md flex flex-col items-end py-4">
           <a
-            href="#webdesign"
+            href="#Homecontent"
             className="menuitem bg-transparent text-black p-4 hover:text-[#4e6185] hover:font-bold duration-300"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('webdesign')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('Homecontent')?.scrollIntoView({ behavior: 'smooth' });
               setIsOpen(false); // Close menu after click
             }}
           >
@@ -115,11 +114,11 @@ function Navbar() {
           </a>
 
           <a
-            href="#digitalmarketing"
+            href="#FeaturesGrid"
             className="menuitem bg-transparent text-black p-4 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('digitalmarketing')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('FeaturesGrid')?.scrollIntoView({ behavior: 'smooth' });
               setIsOpen(false);
             }}
           >
@@ -127,27 +126,15 @@ function Navbar() {
           </a>
 
           <a
-            href="#aboutus"
+            href="#about"
             className="menuitem bg-transparent text-black p-4 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('aboutus')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
               setIsOpen(false);
             }}
           >
             About Us
-          </a>
-
-          <a
-            href="#caseStudy"
-            className="menuitem bg-transparent text-black p-4 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
-            onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('caseStudy')?.scrollIntoView({ behavior: 'smooth' });
-              setIsOpen(false);
-            }}
-          >
-            Case Study
           </a>
 
           <a
