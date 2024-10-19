@@ -21,7 +21,7 @@ function Navbar() {
       <div className='hidden md:flex gap-10 ml-[60px]'>
         <a
           href="#Homecontent" // Ensure this id matches with your section id
-          className="menuitem bg-transparent text-black p-2 hover:text-[#4e6185] hover:font-bold duration-300"
+          className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
             document.getElementById('Homecontent')?.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +43,7 @@ function Navbar() {
 
         <a
           href="#FeaturesGrid" 
-          className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
+          className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
             document.getElementById('FeaturesGrid')?.scrollIntoView({ behavior: 'smooth' });
@@ -54,7 +54,7 @@ function Navbar() {
 
         <a
           href="#about"
-          className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
+          className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
             document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
@@ -65,7 +65,7 @@ function Navbar() {
 
         <a
           href="#caseStudy"
-          className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
+          className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
             document.getElementById('caseStudy')?.scrollIntoView({ behavior: 'smooth' });
@@ -76,7 +76,7 @@ function Navbar() {
 
         <a
           href="#contact"
-          className="menuitem bg-transparent text-black p-2 hover:bg-[#dadada] hover:text-white transition-colors duration-300"
+          className="menuitem bg-transparent text-black p-2 hover:bg-[#4e6185] hover:text-white transition-colors duration-300"
           onClick={(e) => {
             e.preventDefault();
             document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
