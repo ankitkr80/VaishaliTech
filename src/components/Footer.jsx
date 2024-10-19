@@ -20,9 +20,9 @@ const footer = () => {
           <div className="flex flex-col items-center mb-4 lg:mb-0">
             <h3 className="font-bold mb-2">Contact</h3>
             <ul className="text-start">
-              <li><a href="#!" className="hover:text-gray-400">Vaishalitech@gmail.com</a></li>
-              <li><a href="#!" className="hover:text-gray-400">Vadgao, 844122, Pune</a></li>
-              <li><a href="#!" className="hover:text-gray-400">91919199191</a></li>
+              <li><a href="#!" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
+              <li><a href="#!" className="hover:text-gray-400">Vadgao,Pune,411041, Maharashtra</a></li>
+              <li><a href="#!" className="hover:text-gray-400">9135867021</a></li>
             </ul>
           </div>
 
