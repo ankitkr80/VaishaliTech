@@ -4,9 +4,8 @@ const AnnouncementBanner = () => {
   // Array of announcements
   const announcements = [
     "🎉contact us 91555555556",
-    "🎉 30% off on Product A! Limited Time Offer!",
+    "🎉 20% off on all services",
     "🌟 We have 100+ satisfied clients!",
-    "🚀 Join 40+ professionals working with us!"
   ];
 
   // State to track the current announcement index
