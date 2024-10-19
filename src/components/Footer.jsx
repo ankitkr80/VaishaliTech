@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaDiscord, FaEnvelope } from 'react-icons/fa'; // Import specific icons
 
-const BottomBar = () => {
+const footer = () => {
   return (
     <footer className="bg-black text-white overflow-hidden py-4">
       <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-center">
@@ -75,10 +75,10 @@ const BottomBar = () => {
 
       {/* Bottom Copyright */}
       <div className="text-center mt-4 text-sm">
-        <p>Copyright © 2024 Magic UI. All Rights Reserved.</p>
+        <p>Copyright © 2022 . All Rights Reserved.</p>
       </div>
     </footer>
   );
 };
 
-export default BottomBar;
+export default footer;
