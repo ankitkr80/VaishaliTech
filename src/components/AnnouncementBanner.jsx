@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const AnnouncementBanner = () => {
   // Array of announcements
   const announcements = [
-    "🎉contact us 91555555556",
+    "🎉contact us 9135867021",
     "🎉 20% off on all services",
     "🌟 We have 100+ satisfied clients!",
   ];
