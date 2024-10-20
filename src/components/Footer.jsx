@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaDiscord, FaEnvelope } from 'react-icons/fa'; // Import specific icons
+import { FaTwitter, FaDiscord, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import specific icons
 
 const footer = () => {
   return (
@@ -19,7 +19,7 @@ const footer = () => {
           {/* Contact Section */}
           <div className="flex flex-col items-center mb-4 lg:mb-0">
             <h3 className="font-bold mb-2">Contact</h3>
-            <ul className="text-start">
+            <ul className="text-center lg:text-start">
               <li><a href="#!" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
               <li><a href="#!" className="hover:text-gray-400">Vadgao,Pune,411041, Maharashtra</a></li>
               <li><a href="#!" className="hover:text-gray-400">9135867021</a></li>
@@ -42,20 +42,30 @@ const footer = () => {
 
           {/* Community Section */}
           <div className="w-full text-center lg:text-right lg:w-auto ">
-            <h3 className="font-bold mb-2 ">COMMUNITY</h3>
-            <ul >
-              <li>
-                <a href="#!" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
-                  <FaDiscord className="text-white mr-2" /> Discord
+            <h3 className="font-bold mb-2">COMMUNITY</h3>
+            <ul className="flex flex-col items-center lg:items-start">
+              <li className="w-full">
+                <a href="https://www.linkedin.com/company/vaishalitech/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+                  <FaLinkedin className="text-white mr-2" /> LinkedIn
                 </a>
               </li>
-              <li>
-                <a href="#!" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+              <li className="w-full">
+                <a href="https://x.com/Vaishali_Tech?t=PxUdyHSa219eMWC3cj9WSQ&s=08" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
                   <FaTwitter className="text-white mr-2" /> Twitter
                 </a>
               </li>
-              <li>
-                <a href="#!" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+              <li className="w-full">
+                <a href="https://www.instagram.com/vaishalitech_offical/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+                  <FaInstagram className="text-white mr-2" /> Instagram
+                </a>
+              </li>
+              <li className="w-full">
+                <a href="https://www.threads.net/@vaishalitech_offical" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+                  <FaDiscord className="text-white mr-2" /> Threads
+                </a>
+              </li>
+              <li className="w-full">
+                <a href="mailto:vaishalitech.info@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
                   <FaEnvelope className="text-white mr-2" /> Email
                 </a>
               </li>
