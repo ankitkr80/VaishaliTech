@@ -30,13 +30,12 @@ const footer = () => {
           <div className="w-full text-center lg:text-left lg:w-auto">
             <h3 className="font-bold mb-2">PRODUCT</h3>
             <ul className=''>
-              <li><a href="#!" className="hover:text-gray-400">Web-designs</a></li>
-              <li><a href="#!" className="hover:text-gray-400">App-designs</a></li>
+              <li><a href="#!" className="hover:text-gray-400">Web-designs and development</a></li>
+              <li><a href="#!" className="hover:text-gray-400">App-designs and development</a></li>
               <li><a href="#!" className="hover:text-gray-400">UI/UX</a></li>
               <li><a href="#!" className="hover:text-gray-400">Digital Marketings</a></li>
               <li><a href="#!" className="hover:text-gray-400">Social media Management</a></li>
               <li><a href="#!" className="hover:text-gray-400">SEO</a></li>
-              <li><a href="#!" className="hover:text-gray-400">Digital Marketings</a></li>
             </ul>
           </div>
 
