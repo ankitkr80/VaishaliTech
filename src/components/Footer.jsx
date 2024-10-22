@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaTwitter, FaDiscord, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import specific icons
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="bg-black text-white overflow-hidden py-4">
-      <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-center">
+      <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-start">
         
         {/* Left Side */}
         <div className="flex justify-start items-center mb-4 lg:mb-0">
@@ -17,12 +17,13 @@ const footer = () => {
         {/* Flex container for Contact, Product, Community, and Legal on larger screens */}
         <div className="flex flex-col lg:flex-row justify-between w-full lg:w-auto lg:space-x-20">
           {/* Contact Section */}
-          <div className="flex flex-col items-center mb-4 lg:mb-0">
+          <div className="flex flex-col items-center lg:items-start mb-4 lg:mb-0">
             <h3 className="font-bold mb-2">Contact</h3>
             <ul className="text-center lg:text-start">
-              <li><a href="#!" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
-              <li><a href="#!" className="hover:text-gray-400">Vadgao,Pune,411041, Maharashtra</a></li>
-              <li><a href="#!" className="hover:text-gray-400">9135867021</a></li>
+              <li><a href="mailto:vaishalitech.info@gmail.com" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
+              <li><a href="#!" className="hover:text-gray-400">Vadgao, Pune, 411041, Maharashtra</a></li>
+              {/* Make phone number clickable */}
+              <li><a href="tel:+919135867021" className="hover:text-gray-400">+91 9135867021</a></li>
             </ul>
           </div>
 
@@ -33,14 +34,14 @@ const footer = () => {
               <li><a href="#!" className="hover:text-gray-400">Web-designs and development</a></li>
               <li><a href="#!" className="hover:text-gray-400">App-designs and development</a></li>
               <li><a href="#!" className="hover:text-gray-400">UI/UX</a></li>
-              <li><a href="#!" className="hover:text-gray-400">Digital Marketings</a></li>
+              <li><a href="#!" className="hover:text-gray-400">Digital Marketing</a></li>
               <li><a href="#!" className="hover:text-gray-400">Social media Management</a></li>
               <li><a href="#!" className="hover:text-gray-400">SEO</a></li>
             </ul>
           </div>
 
           {/* Community Section */}
-          <div className="w-full text-center lg:text-right lg:w-auto ">
+          <div className="w-full text-center lg:text-right lg:w-auto">
             <h3 className="font-bold mb-2">COMMUNITY</h3>
             <ul className="flex flex-col items-center lg:items-start">
               <li className="w-full">
@@ -90,4 +91,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
