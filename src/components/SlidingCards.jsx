@@ -38,14 +38,24 @@ function SlidingCards() {
     <div id="SlidingCards" className="w-[90%] h-auto">
       {/* Centered h1 and p */}
       <div className="text-center mb-8">
-                <h1 className="text-4xl font-bold mb-4" style={{ color: 'var(--primary-color)' }}>Bringing your Ideas to Reality</h1>
-                <div className="mx-auto" style={{ maxWidth: '600px' }}>
-                    <p className="text-lg text-justify mb-4" style={{ marginLeft: '1rem', marginRight: '1rem' }}> {/* Added margin for better spacing */}
-                        Step into the age of transformation with robust features and dynamic designs with Webtel's business website designing services.
-                    </p>
-                </div>
-            </div>
-
+        <h1
+          className="text-4xl font-bold mb-4"
+          style={{ color: "var(--primary-color)" }}
+        >
+          Bringing your Ideas to Reality
+        </h1>
+        <div className="mx-auto" style={{ maxWidth: "600px" }}>
+          <p
+            className="text-lg text-justify mb-4"
+            style={{ marginLeft: "1rem", marginRight: "1rem" }}
+          >
+            {" "}
+            {/* Added margin for better spacing */}
+            Step into the age of transformation with robust features and dynamic
+            designs with Webtel's business website designing services.
+          </p>
+        </div>
+      </div>
 
       <div className="">
         <Slider {...settings}>
@@ -85,38 +95,34 @@ function SlidingCards() {
 
 const data = [
   {
-    name: "Morgan",
     image: "web1.png",
-    description: "Transform Your Vision",
-    paragraph: "Morgan is committed to quality and innovation in all products.",
-  },
-  {
-    name: "Jaysingh",
-    image: "web2.png",
     description: "Stand Out With SEO",
     paragraph:
-      "Jaysingh focuses on robust solutions for complex engineering problems.",
+      "VaishaliTech is an expert when it comes to digital enterprise solutions. By optimizing industrial expertise, we bring to life an SEO-friendly website that holds the potential to attract audiences and masses across the globe.",
   },
   {
-    name: "Alok",
+    image: "web2.png",
+    description: "Secure & Reliable",
+    paragraph:
+      "The website designing services offered by VaishaliTech ensure complete data security for the clients as well as the website visitors. By reducing the risk of cyber-attacks, data theft, and other security threats, we offer a secure online experience..",
+  },
+  {
+    image: "web3.png",
+    description: "Mobile-Friendly",
+    paragraph:
+      "VaishaliTech's Business Websites are compatible with any device, be it Windows, Android, or IOS. Moreover, the designs are easily adaptable to Mobiles, PCs, Tablets, Laptops, and so on for a uniform and uninterrupted user experience.",
+  },
+  {
+    image: "web4.png",
+    description: "Contemporary-Design",
+    paragraph:
+      "The website designs offered by VaishaliTech are contemporary and based on the latest market trends. Our team constantly updates itself with industrial insights and trends to always keep an edge over technology..",
+  },
+  {
     image: "web5.png",
-    description: "Maintain Your Brand Voice",
+    description: "Dedicated Support",
     paragraph:
-      "Alok focuses on robust solutions for complex engineering problems.",
-  },
-  {
-    name: "Hello",
-    image: "web4.png",
-    description: "Ongoing Support & Maintenance",
-    paragraph:
-      "Hello specializes in creating friendly interactions with users.",
-  },
-  {
-    name: "Hello",
-    image: "web4.png",
-    description: "User Friendly",
-    paragraph:
-      "Hello specializes in creating friendly interactions with users.",
+      "Our relationship with you does not end at the service delivery but xtends to your complete satisfaction. That is why we offer end-to-end support to our customers to resolve all their technical issues and challenges.",
   },
 ];
 
