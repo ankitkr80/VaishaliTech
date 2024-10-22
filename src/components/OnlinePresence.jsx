@@ -25,7 +25,8 @@ const OnlinePresence = ({ onScrollToContact }) => {
       </div>
       <div className="w-full mt-6 flex justify-center md:w-1/2 md:mt-0">
         <img
-          src="https://media.istockphoto.com/id/115065432/photo/family-circle.webp?a=1&b=1&s=612x612&w=0&k=20&c=1ldLr0WkQBA-3KOLOK9-MxbKE7lYCJ8RlOzFJMykODY="
+{/*           src="https://media.istockphoto.com/id/115065432/photo/family-circle.webp?a=1&b=1&s=612x612&w=0&k=20&c=1ldLr0WkQBA-3KOLOK9-MxbKE7lYCJ8RlOzFJMykODY=" */}
+          src="online.jpg"
           alt="Website Design Service Illustration"
           className="w-full max-w-xs"
         />
