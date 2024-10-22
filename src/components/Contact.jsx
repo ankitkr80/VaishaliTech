@@ -119,7 +119,7 @@ function Contact() {
 
             <button
               type="submit"
-              className="p-[15px_30px] bg-[#880e4f] text-white rounded-md cursor-pointer hover:bg-[#d96b05]"
+              className="p-[15px_30px] bg-[#880e4f] text-white rounded-md cursor-pointer hover:bg-[#4e6185]"
             >
               Submit
             </button>
