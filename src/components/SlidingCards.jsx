@@ -37,7 +37,7 @@ function SlidingCards() {
   return (
     <div id="SlidingCards" className="w-[90%] h-auto">
       {/* Centered h1 and p */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 ml-2">
         <h1
           className="text-4xl font-bold mb-4"
           style={{ color: "var(--primary-color)" }}
@@ -49,7 +49,6 @@ function SlidingCards() {
             className="text-lg text-justify mb-4"
             style={{ marginLeft: "1rem", marginRight: "1rem" }}
           >
-            {" "}
             {/* Added margin for better spacing */}
             Step into the age of transformation with robust features and dynamic
             designs with Webtel's business website designing services.
@@ -62,26 +61,33 @@ function SlidingCards() {
           {data.map((d, index) => (
             <div
               key={index}
-              className="group mt-10 bg-white h-[340px] flex flex-col text-primary  rounded-xl transition-colors duration-300 hover:bg-gray-100"
+              className="group mt-10 bg-white h-[400px] flex flex-col text-primary  rounded-xl transition-colors duration-300 hover:bg-gray-100 relative shadow-lg hover:shadow-2xl"
+              style={{
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                transition: "box-shadow 0.3s ease",
+              }}
             >
               {/* Card container */}
-              <div className="relative h-56 rounded-t-xl flex flex-col justify-center items-center">
+              <div className="relative h-[220px] rounded-t-xl flex flex-col justify-center items-center">
                 {/* Image - initially visible, hidden on hover */}
                 <img
                   src={d.image}
-                  // alt={d.name}
                   className="w-54 h-54 mt-24 rounded-full transform transition-transform duration-300 ease-in-out group-hover:scale-0"
                 />
                 <div
                   className="flex text-xl font-bold flex-col justify-center items-center gap-4 p-4 transform transition-transform duration-300 ease-in-out group-hover:scale-0"
                   style={{ color: "#4e6185" }}
                 >
-                  {/* <p className='text-2xl font-semibold'>{d.name}</p> */}
                   <p>{d.description}</p>
                 </div>
+              </div>
 
-                {/* Paragraph - initially hidden, shown on hover */}
-                <p className="absolute flex justify-center items-center p-8 text-black text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              {/* Paragraph - initially hidden, shown on hover */}
+              <div className="absolute inset-0 p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                <p
+                  className="text-justify text-black text-lg font-semibold overflow-hidden transform translate-y-12 group-hover:translate-y-0 transition-transform duration-300 ease-in-out"
+                  style={{ maxHeight: "160px" }} // Ensures paragraph stays within the card
+                >
                   {d.paragraph}
                 </p>
               </div>
@@ -104,7 +110,7 @@ const data = [
     image: "web2.png",
     description: "Secure & Reliable",
     paragraph:
-      "The website designing services offered by VaishaliTech ensure complete data security for the clients as well as the website visitors. By reducing the risk of cyber-attacks, data theft, and other security threats, we offer a secure online experience..",
+      "The website designing services offered by VaishaliTech ensure complete data security for the clients as well as the website visitors. By reducing the risk of cyber-attacks, data theft, and other security threats, we offer a secure online experience.",
   },
   {
     image: "web3.png",
@@ -116,13 +122,13 @@ const data = [
     image: "web4.png",
     description: "Contemporary-Design",
     paragraph:
-      "The website designs offered by VaishaliTech are contemporary and based on the latest market trends. Our team constantly updates itself with industrial insights and trends to always keep an edge over technology..",
+      "The website designs offered by VaishaliTech are contemporary and based on the latest market trends. Our team constantly updates itself with industrial insights and trends to always keep an edge over technology.",
   },
   {
     image: "web5.png",
     description: "Dedicated Support",
     paragraph:
-      "Our relationship with you does not end at the service delivery but xtends to your complete satisfaction. That is why we offer end-to-end support to our customers to resolve all their technical issues and challenges.",
+      "Our relationship with you does not end at the service delivery but extends to your complete satisfaction. That is why we offer end-to-end support to our customers to resolve all their technical issues and challenges.",
   },
 ];
 
