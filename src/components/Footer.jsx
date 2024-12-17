@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Flex container for Contact, Product, Community, and Legal on larger screens */}
-        <div className="flex flex-col lg:flex-row justify-between w-full lg:w-auto lg:space-x-20">
+        <div className="flex flex-col lg:flex-row justify-between w-full lg:w-auto lg:space-x-20 lg:ml-4  lg:mr-8">
           {/* Contact Section */}
           <div className="flex flex-col items-center lg:items-start mb-4 lg:mb-0">
             <h3 className="font-bold mb-2">Contact</h3>
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Product Section */}
           <div className="w-full text-center lg:text-left lg:w-auto">
             <h3 className="font-bold mb-2">PRODUCT</h3>
-            <ul className=''>
+            <ul>
               <li><a href="#!" className="hover:text-gray-400">Web-designs and development</a></li>
               <li><a href="#!" className="hover:text-gray-400">App-designs and development</a></li>
               <li><a href="#!" className="hover:text-gray-400">UI/UX</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Community Section */}
-          <div className="w-full text-center lg:text-right lg:w-auto">
+          <div className="w-full text-center lg:text-left lg:w-auto">
             <h3 className="font-bold mb-2">COMMUNITY</h3>
             <ul className="flex flex-col items-center lg:items-start">
               <li className="w-full">
@@ -73,13 +73,14 @@ const Footer = () => {
           </div>
 
           {/* Legal Section */}
-          <div className="mt-4 lg:mt-0 text-center">
+          <div className="mt-4 lg:mt-0 text-center lg:text-left lg:ml-8">
             <h3 className="font-bold mb-2">LEGAL</h3>
             <ul>
               <li><a href="#!" className="hover:text-gray-400">Terms</a></li>
               <li><a href="#!" className="hover:text-gray-400">Privacy</a></li>
             </ul>
           </div>
+
         </div>
       </div>
 

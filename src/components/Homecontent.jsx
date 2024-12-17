@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick'; // Import Slider from react-slick
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import icons for navigation
+import { FaWhatsapp } from 'react-icons/fa'; // Import WhatsApp icon
 
 const cardData = [
   {
@@ -36,7 +37,7 @@ function Homecontent() {
     const { onClick } = props;
     return (
       <div
-        className="absolute top-1/2 right-[-30px] lg:right-[-50px] z-10 transform -translate-y-1/2 cursor-pointer" // Positioned 50px outside the card div for large screens
+        className="absolute top-1/2 right-[-30px] lg:right-[-50px] z-10 transform -translate-y-1/2 cursor-pointer"
         onClick={onClick}
       >
         <FaChevronRight size={30} color="var(--primary-color)" />
@@ -48,7 +49,7 @@ function Homecontent() {
     const { onClick } = props;
     return (
       <div
-        className="absolute top-1/2 left-[-30px] lg:left-[-50px] z-10 transform -translate-y-1/2 cursor-pointer" // Positioned 50px outside the card div for large screens
+        className="absolute top-1/2 left-[-30px] lg:left-[-50px] z-10 transform -translate-y-1/2 cursor-pointer"
         onClick={onClick}
       >
         <FaChevronLeft size={30} color="var(--primary-color)" />
@@ -58,33 +59,45 @@ function Homecontent() {
 
   // Settings for the carousel
   const settings = {
-    dots: true, // Show navigation dots
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4, // Show 4 cards on large screens
+    slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />, // Use custom next arrow
-    prevArrow: <PrevArrow />, // Use custom previous arrow
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768, // For small screens (tablets and mobile)
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 card on small screens
+          slidesToShow: 1,
           slidesToScroll: 1,
-          dots: false // No dots on small screens
+          dots: false
         }
       }
     ]
   };
 
   return (
-    <div id="Homecontent" className="flex justify-center">
+    <div id="Homecontent" className="flex justify-center relative">
       <div className='p-5 main m-5 items-center justify-center w-[100%]'>
-        <p className='text-start justify-start align-center text-[20px] font-serif'   style={{ textAlign: "justify", textJustify: "inter-word" }}>
-        VaishaliTech is a top website design company that uses the latest technology and creative ideas to bring your vision to life, making your brand stand out online.        </p>
+        <p className='text-start justify-start align-center text-[20px] font-serif' style={{ textAlign: "justify", textJustify: "inter-word" }}>
+          VaishaliTech is a top website design company that uses the latest technology and creative ideas to bring your vision to life, making your brand stand out online.
+        </p>
         <div className='relative mt-12'>
+    {/* WhatsApp Icon */}
+    <a
+  href="https://wa.me/919135867021"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed right-4 top-auto bottom-4 sm:top-[10%] sm:right-4 sm:bottom-auto lg:top-1/2 lg:transform lg:-translate-y-1/2 bg-[#25D366] text-white p-4 rounded-full shadow-lg cursor-pointer z-20"
+>
+  <FaWhatsapp size={30} />
+</a>
+
+
           {/* Carousel container for larger screens */}
-          <div className="relative hidden lg:block w-[80%] mx-auto"> {/* Hide carousel for small screens */}
+          <div className="relative hidden lg:block w-[80%] mx-auto">
             <Slider {...settings}>
               {cardData.map((card, index) => (
                 <div 
@@ -97,7 +110,7 @@ function Homecontent() {
                   />
                   <div className='text-center mt-9 flex-grow'>
                     <h3 className='text-xl font-bold text-[#4e6185]'>{card.title}</h3>
-                    <p className='mt-3 text-sm' >{card.description}</p>
+                    <p className='mt-3 text-sm'>{card.description}</p>
                   </div>
                 </div>
               ))}
@@ -105,7 +118,7 @@ function Homecontent() {
           </div>
 
           {/* Render cards for small screens (normal div) */}
-          <div className="lg:hidden flex flex-wrap justify-center gap-8"> {/* Hide normal div for large screens */}
+          <div className="lg:hidden flex flex-wrap justify-center gap-8">
             {cardData.map((card, index) => (
               <div key={index} className="card w-[40vh] h-[auto] rounded-lg shadow-lg p-4 flex flex-col items-center border" style={{ borderColor: 'var(--primary-color)' }}>
                 <img
