@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaDiscord, FaEnvelope, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import specific icons
+import { FaTwitter, FaDiscord, FaEnvelope, FaLinkedin, FaInstagram, FaPinterest } from 'react-icons/fa'; // Import Pinterest icon
 
 const Footer = () => {
   return (
@@ -15,14 +15,13 @@ const Footer = () => {
         </div>
 
         {/* Flex container for Contact, Product, Community, and Legal on larger screens */}
-        <div className="flex flex-col lg:flex-row justify-between w-full lg:w-auto lg:space-x-20 lg:ml-4  lg:mr-8">
+        <div className="flex flex-col lg:flex-row justify-between w-full lg:w-auto lg:space-x-20 lg:ml-4 lg:mr-8">
           {/* Contact Section */}
           <div className="flex flex-col items-center lg:items-start mb-4 lg:mb-0">
             <h3 className="font-bold mb-2">Contact</h3>
             <ul className="text-center lg:text-start">
               <li><a href="mailto:vaishalitech.info@gmail.com" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
               <li><a href="#!" className="hover:text-gray-400">Vadgao, Pune, 411041, Maharashtra</a></li>
-              {/* Make phone number clickable */}
               <li><a href="tel:+919135867021" className="hover:text-gray-400">+91 9135867021</a></li>
             </ul>
           </div>
@@ -69,6 +68,11 @@ const Footer = () => {
                   <FaEnvelope className="text-white mr-2" /> Email
                 </a>
               </li>
+              <li className="w-full">
+                <a href="https://pin.it/6I5UHKsXA" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center justify-center lg:justify-start">
+                  <FaPinterest className="text-white mr-2" /> Pinterest
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -80,7 +84,6 @@ const Footer = () => {
               <li><a href="#!" className="hover:text-gray-400">Privacy</a></li>
             </ul>
           </div>
-
         </div>
       </div>
 
