@@ -21,7 +21,7 @@ const Footer = () => {
             <h3 className="font-bold mb-2">Contact</h3>
             <ul className="text-center lg:text-start">
               <li><a href="mailto:vaishalitech.info@gmail.com" className="hover:text-gray-400">vaishalitech.info@gmail.com</a></li>
-              <li><a href="#!" className="hover:text-gray-400">Vadgao, Pune, 411041, Maharashtra</a></li>
+              <li><a href="#!" className="hover:text-gray-400">E-2, Ashok Marg, Panch Batti, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001</a></li>
               <li><a href="tel:+919135867021" className="hover:text-gray-400">+91 9135867021</a></li>
             </ul>
           </div>
